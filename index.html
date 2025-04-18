@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stitch and Bloom | Home</title>
   <style>
-    body { margin: 0; font-family: 'Georgia', serif; background-color: #f5f0e1; color: #3b2e2e; }
-    header, footer { background-color: #b5a886; color: white; text-align: center; padding: 1em; position: relative; }
-    nav { background-color: #e0cfc1; display: flex; justify-content: center; gap: 2em; padding: 1em; }
+    body { margin: 0; font-family: 'Georgia', serif; background-color: #ffffff; color: #535353; }
+    header, footer { background-color: #a28261; color: white; text-align: center; padding: 1em; position: relative; }
+    nav { background-color: #f6f6f6; display: flex; justify-content: center; gap: 2em; padding: 1em; }
     nav a { text-decoration: none; color: #3b2e2e; font-weight: bold; }
     .container { padding: 2em; max-width: 1000px; margin: auto; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1em; }
+
+    .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+}
     .item { background: white; border-radius: 10px; padding: 1em; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
     .item img { width: 100%; border-radius: 10px; }
     form input, form textarea { width: 100%; margin: 0.5em 0; padding: 0.5em; border-radius: 5px; border: 1px solid #ccc; }
@@ -74,14 +79,19 @@
 
     <section id="gallery" class="gallery">
       <div class="item">
-        <img src="https://via.placeholder.com/200" alt="Cherry Jam Design">
-        <h3>Cherry Jam Jar / Вишневе варення</h3>
-        <p>$4.99</p>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
-          <button type="submit">Buy / Купити</button>
-        </form>
+         <img src="./IMG/Vegetables.png" alt="Vegetables machine embroidery design">
+        <h3>Farm Vegetables / Садові овочі</h3>
+        <p>$3</p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_s-xclick" />
+  <input type="hidden" name="hosted_button_id" value="5ZYEQDN3YUCQQ" />
+  <input type="hidden" name="currency_code" value="USD" />
+  <input type="image"
+  src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif"
+  name="submit"
+  style="width: 200px; height: auto;" 
+  alt="PayPal – Pay safely">
+</form>
       </div>
     </section>
 
@@ -89,19 +99,22 @@
       <div data-lang="en">
         <h2>Contact</h2>
         <p>Email: stitchandbloomua@gmail.com</p>
-        <p>Instagram: <a href="https://instagram.com" target="_blank">@stitchandbloomua</a></p>
+        <p>Instagram: <a href="https://instagram.com" target="_blank">@milana.kim.ua</a></p>
       </div>
       <div data-lang="ua" class="hidden">
-        <h2>Контакти</h2>
+        
+<h2>Контакти</h2>
         <p>Email: stitchandbloomua@gmail.com</p>
         <p>Instagram: <a href="https://instagram.com" target="_blank">@stitchandbloomua</a></p>
       </div>
-      <form>
-        <input type="text" placeholder="Your Name / Ваше ім'я" required>
-        <input type="email" placeholder="Your Email / Ваш Email" required>
-        <textarea rows="4" placeholder="Message / Повідомлення"></textarea>
-        <button type="submit">Send / Надіслати</button>
-      </form>
+
+  <form action="https://formspree.io/f/xrbpwobb" method="POST">
+  <input type="text" name="name" placeholder="Your Name / Ваше ім'я" required>
+  <input type="email" name="email" placeholder="Your Email / Ваш Email" required>
+  <textarea name="message" rows="4" placeholder="Message / Повідомлення" required></textarea>
+  <button type="submit">Send / Надіслати</button>
+</form>
+
     </section>
 
     <section id="news">
